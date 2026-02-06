@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER_TASK_MANAGER_v3.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="header-title">root@system:~/secure_vault</span>
+        </div>
+
+        <div class="terminal-body">
+            
+            <h1 class="typing-effect" id="pageTitle">> SYSTEM_INITIATED_</h1>
+
+            <div id="directoryView">
+                <div class="status-bar">
+                    <span id="clock">00:00:00</span> | MODE: DIRECTORY | PROJECTS: <span id="fileCount">0</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="fileInput" placeholder="ENTER PROJECT NAME..." autocomplete="off">
+                    <button onclick="createFile()">[ MKDIR ]</button>
+                </div>
+                
+                <ul id="fileList"></ul>
+            </div>
+
+            <div id="taskView" style="display: none;">
+                <div class="status-bar">
+                    LOCATION: <span id="currentFileName">~/</span>
+                </div>
+
+                <button class="back-btn" onclick="goBack()"> <.. RETURN_TO_ROOT </button>
+                
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="ENTER MISSION OBJECTIVE..." autocomplete="off">
+                    <input type="time" id="timeInput" style="flex: 0.5;">
+                    <button onclick="addTask()">[ EXECUTE ]</button>
+                </div>
+                
+                <ul id="taskList"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
