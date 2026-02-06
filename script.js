@@ -1,4 +1,4 @@
-// === ELEMENTS ===
+// ELEMENTS
 const fileInput = document.getElementById('fileInput');
 const taskInput = document.getElementById('taskInput');
 const timeInput = document.getElementById('timeInput'); // New
@@ -11,18 +11,18 @@ const currentFileNameSpan = document.getElementById('currentFileName');
 const fileCountSpan = document.getElementById('fileCount');
 const clockDisplay = document.getElementById('clock');
 
-// === DATA STORE ===
+// DATA STORE
 let fileSystem = JSON.parse(localStorage.getItem('cyberFileSystem')) || [];
 let currentOpenedFileId = null;
 
-// === INIT ===
+// INIT 
 document.addEventListener('DOMContentLoaded', () => {
     renderFiles();
     requestPermission(); // Notification Permission
     setInterval(systemLoop, 1000); // Clock + Notification Check
 });
 
-// === NOTIFICATION SYSTEM ===
+// NOTIFICATION SYSTEM
 function requestPermission() {
     if ("Notification" in window) {
         Notification.requestPermission();
@@ -210,4 +210,5 @@ function saveSystem() {
 
 // Shortcuts
 fileInput.addEventListener("keypress", (e) => { if(e.key === "Enter") createFile(); });
+
 taskInput.addEventListener("keypress", (e) => { if(e.key === "Enter") addTask(); });
