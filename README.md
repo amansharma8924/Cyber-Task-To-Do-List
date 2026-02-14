@@ -1,5 +1,38 @@
-# Cyber-Task-To-Do-List
+# 🖥️ CYBER TASK MANAGER v3.0
 
-•Developed a fully functional hacker-themed task manager using pure HTML, CSS, and Vanilla JavaScript with responsive UI and terminal-style animations.  
-•Implemented Local Storage-based persistent task management, including add, delete, complete (strike-through) tasks and time-based reminders. 
-•	Integrated Browser Notification API to deliver real-time task reminders and designed the application to work like a desktop & mobile app (PWA-like behavior).
+A futuristic **terminal-style task & project manager** built using **HTML, CSS, and JavaScript**.  
+This project helps users manage projects and tasks with a cyber / hacker themed interface and time-based notifications.
+
+---
+
+## 🚀 Features
+
+- 📁 Project-based task management (Folder system)
+- ⏰ Time-based task reminders with browser notifications
+- 💾 Data stored using LocalStorage (No backend required)
+- 📊 Automatic project progress percentage
+- 🖥️ Cyber / terminal inspired UI
+- ⌨️ Keyboard shortcuts (Press Enter to add)
+- 🔔 System-style alert notifications
+- 🌙 Dark neon green theme
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** – Structure & layout  
+- **CSS3** – Cyber terminal UI, animations & effects  
+- **JavaScript (Vanilla)** – Logic, LocalStorage & Notification system  
+
+---
+
+## 📂 Project Structure
+
+```bash
+CYBER_TASK_MANAGER/
+│
+├── index.html      # Main UI structure
+├── style.css       # Terminal-style design
+├── script.js       # Core logic & task handling
+├── icon.ico        # Notification icon (optional)
+└── README.md       # Project documentation
